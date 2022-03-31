@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}

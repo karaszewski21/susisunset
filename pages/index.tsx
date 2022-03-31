@@ -3,10 +3,8 @@ import type {
   InferGetStaticPropsType,
   NextPage,
 } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+
 interface User {
   name: string;
   age: number;
@@ -22,10 +20,7 @@ export const Home: NextPage<Props> = ({ users }: Props) => {
   ));
   return (
     <>
-      <Link href="/contact">
-        <a>Contacts</a>
-      </Link>
-      <div>{data}</div>
+      <h1>home</h1>
     </>
   );
 };
