@@ -22,7 +22,9 @@ export const Home: NextPage<Props> = ({ users }: Props) => {
   ));
   return (
     <>
-      <Link href="/contact"></Link>
+      <Link href="/contact">
+        <a>Contacts</a>
+      </Link>
       <div>{data}</div>
     </>
   );
