@@ -1,0 +1,21 @@
+.rightPanelContent {
+  right: 0;
+  height: 90vh;
+  background-color: cadetblue;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  transform: translateX(0);
+
+  @media (max-width: 1200px) {
+    transform: translateX(90px);
+  }
+}
+
+.wrap {
+  transform: translateX(-100px);
+
+  @media (max-width: 1200px) {
+    transform: translateX(0px);
+  }
+}

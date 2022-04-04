@@ -1,0 +1,26 @@
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-template-rows: auto;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 100%;
+  }
+
+  &__panel {
+    height: 90vh;
+  }
+
+  &__left {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__right {
+    position: relative;
+    // @media (max-width: 1200px) {
+    //   display: none;
+    // }
+  }
+}
